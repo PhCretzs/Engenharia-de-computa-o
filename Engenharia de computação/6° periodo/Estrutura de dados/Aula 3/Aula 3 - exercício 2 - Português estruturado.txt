@@ -1,0 +1,21 @@
+//Receber um texto de até 100 caracteres contendo letras e números e contar quantas vezes aparece a letra a
+
+Algoritmo "ContarCaracteresA"
+Var
+    Texto: caractere
+    i, contador: inteiro
+Inicio
+    contador = 0
+
+    Escreva("Digite o texto: ")
+    Leia(Texto)
+
+    Para i de 1 até comprimento(Texto) faça
+        Se Texto[i] = 'a' ou Texto[i] = 'A' então
+            contador++
+        FimSe
+    FimPara
+
+    Escreva("Quantidade de letras 'a': ", contador)
+
+FimAlgoritmo
