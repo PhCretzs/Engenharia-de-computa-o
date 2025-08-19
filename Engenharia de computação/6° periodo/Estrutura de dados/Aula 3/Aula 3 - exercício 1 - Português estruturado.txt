@@ -1,0 +1,26 @@
+//Nesse exercício devemos fazer um código que recebe um numero de matrícula e verifique em um array com 1000 aprovados se o candidato com o numero de matricula inserido está aprovado.
+
+Algoritmo "SituaçãoMatriculas"
+Var
+    NumeroMatricula: Inteiro
+    Matricula: Vetor[1..1000] de Inteiro // esse é um exercício teórico, devemos considerar que essa lista já está preenchida 
+    i: Inteiro
+    Encontrado: Booleano
+Inicio
+    Escreva("Digite o número da matrícula do candidato a ser verificado: ")
+    Leia(NumeroMatricula)
+
+    Encontrado <- Falso
+
+    Para i de 1 até 1000 faça
+        Se Matricula[i] = NumeroMatricula então
+            Escreva("APROVADO")
+            Encontrado <- Verdadeiro
+            Interrompa
+        FimSe
+    FimPara
+
+    Se Encontrado = Falso então
+        Escreva("reprovado")
+    FimSe        
+FimAlgoritmo
